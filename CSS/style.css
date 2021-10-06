@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header {
+    font-family: Quantico;
+    width: 1366px;
+    height: 140px;
+    background-color: #2D2A2A;
+}
+
+@font-face {
+    font-family: Quantico;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+.container-grid {
+    width: 1366px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.posi-header {
+    width: 1366px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 70%;
+    align-items: center;
+    word-spacing: 30px;
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 35px;
+    
+}
+
+.barras{
+    
+}
+
+.botaobusca {
+   display: inline-flex;
+   justify-content: center;
+   right: 15%;
+}
+
+#banner {
+    height: 320px;
+    width: 1366px;
+    background-image: url(../Imagens/Banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.texto-bn {
+    color: white;
+    font-family: Quantico;
+    display: flexbox;
+    font-size: 30px;
+    text-align: center;
+}
+
+.texto-bn h4{
+    padding: 5px;
+}
+
+.botaocmp {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#computadores {
+    background-color: #2D2A2A;
+    display: flex;
+    justify-content: center;
+    width: 1366px;
+    height: 300px;
+}
+
+#computadores h1{
+    font-family: Quantico;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.pcs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-top: 20px;
+    
+}
+.pcs p{
+    color: white;
+    padding-top: 5px;
+}
+
+#infos {
+   background-color:black;
+   width: 1366px;
+   height: 100px;
+}
+
+#infos h4{
+    color: white;
+    text-shadow: #1d91c770;
+}
+#infos h6{
+    color: white;
+    text-shadow: #1d91c770;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.btncadastro {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width 1366px;){
+    .container-grid{
+        width: 90%;
+    }
+    .menu{
+        width: 560px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .logo{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width 900px;){
+    .container-grid{
+        width: 90%;
+    }
+    .menu{
+        width: 560px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .logo{
+        width: 300px;
+    }
+}
+
