@@ -1,21 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Game Mania</title>
-</head>
-<body>
-    <header>
-        <a href="index.html"><img src="C:/Users/rp121/Desktop/UC9SA2/Imagens/Logo.svg" alt="Logo do Site"></a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="novidades.html">Novidades</a>
-            <a href="computadores.html">Computadores</a>
-            <a href="eletronicos.html">Eletrônicos</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-</body>
-</html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contato - Game Mania</title>
+            <link rel="stylesheet" href="CSS/stylecontato.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <script src="JS/jquery-3.6.0.js"></script>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+                
+                legend{
+                    padding: 10px;
+                    text-align: center;
+                    background-color: rgb(6, 13, 53);
+                    border-radius: 8px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+            <header>
+                <selection class ="container-grid posi-header" class="container-fluid">
+                        <a href="index.html" class="logo"><img src="C:/Users/rp121/Desktop/UC9SA2/Imagens/Logo.svg" alt="Logo do Site"></a>
+                    <div class="menu">  
+                        <nav>
+                            <a href="index.html">Home</a>
+                            <a href="novidades.html">Novidades</a>
+                            <a href="computadores.html">Computadores</a>
+                            <a href="eletronicos.html">Eletrônicos</a>
+                            <a href="contato.html">Contato</a>
+                        </nav>
+                        <div class="botaobusca">
+                            <input type="text"/>
+                                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    BUSCAR
+                                </button>
+                        </div>
+                    </div>      
+                </selection>
+            </header>
+            
+            <!--IMPLEMENTAR ANGULAR E UM EVENTO-->
+            <!--FORMULÁRIO PARA CONTATO-->
+            <selection class="form-contato">
+            <div class="container-box">
+                <form onsubmit="onSubmit()">
+                        <fieldset>
+                            <legend ><b>Formulário Para Contato</b></legend>
+                            
+                            <div class="input-box">
+                                <input type="text" name="nome" id="nome" class="input-user">
+                                <label for="nome">Nome Completo</label>
+                            </div>
+                            <br>
+                            <div class="input-box">
+                                <input type="email" name="email" id="email" class="input-user">
+                                <label for="email">E-mail</label>
+                            </div>
+                            <br>
+                            <div class="input-box">
+                                <input type="tel" name="telefone" id="telefone" class="input-user">
+                                <label for="telefone">Telefone</label>
+                            </div>
+                            <br>
+                            <div class="input-box">
+                                <label>Motivo do Contato</label>
+                                <select>
+                                    <option selected disabled value="">Selecione...</option>
+                                    <option>Suporte</option>
+                                    <option>Vendas</option>
+                                    <option>Outros</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="input-box">
+                                <input type="tel" name="telefone" id="telefone" class="input-user">
+                                <label for="telefone">Cidade</label>
+                            </div>
+                            <br>
+                            <div class="input-box">
+                                <input type="tel" name="telefone" id="telefone" class="input-user">
+                                <label for="telefone">Estado</label>
+                            </div>
+                            <br>
+                            <div class="input-box">
+                                <input type="tel" name="telefone" id="telefone" class="input-user">
+                                <label for="telefone">Endereço</label>
+                            </div>
+                            <br>
+                            <div class="input-box">
+                                <label>Observações</label>
+                                <textarea name="observacoes"></textarea>
+                            </div>
+                            <div>
+                                <button>Enviar</button>
+                            </div>
+                        </fieldset>
+                </form>
+            </div>
+            </selection>   
+            <section id="infos">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-2">
+                            <h4>Páginas</h4>
+                            <div>
+                                <a href="index.html" class="logo"><img src="Imagens/Instagram.png" alt="Instagram"></a>
+                                <a href="index.html" class="logo"><img src="Imagens/Facebook.png" alt="Facebook"></a>
+                                <a href="index.html" class="logo"><img src="Imagens/Linkedin.png" alt="Linkedin"></a>
+                            </div>
+                        </div>
+                            <div class="col-12 col-md-3">
+                                <h4>Endereço</h4>
+                                <div>
+                                    <h6>
+                                        Lorem ipsum dolor sit amet
+                                    </h6>
+                                </div>
+                            </div>
+                        <div class="col-12 col-md-4">
+                            <h4>GameMania</h4>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <nav class="cadastro">
+                                <form action="">
+                                    <input id="campoemail" type="email" placeholder="E-mail" required>
+                                    <button class="btncadastro"  onclick="enviarEmail()">CADASTRAR</button>
+                                </form>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>    
+    </html>

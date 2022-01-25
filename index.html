@@ -13,6 +13,7 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         </style>
+        <script src="JS/jquery-3.6.0.js"></script>
     </head>
     
     <body>
@@ -43,15 +44,15 @@
 
         <!--BANNER PRINCIPAL-->
 
-        <section id="banner">
-            <div class="container-fluid">
+        <section class="banner">
+            <div>
                 <div>
                     <nav class="texto-bn"> 
                         <h1>A melhor loja Gamer</h1>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sem justo. Nullam sit amet nulla et leo tempor pellentesque. Mauris convallis sagittis scelerisque. Etiam quis mattis ipsum, a iaculis tortor. Nunc egestas nunc ipsum, vitae ultricies ipsum dignissim ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat.</h4>
-                    </nav>
-                    <nav class="botaocmp">
-                        <button type="button" class="btn btn-primary">COMPRAR</button>
+                        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            COMPRAR
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -59,24 +60,24 @@
 
         <!--COMPUTADORES-->
 
-        <section id="computadores">
+        <section class="computadores">
             <div class="container-fluid">
                 <h1>COMPUTADORES</h1>
                 <div class="row pcs">
-                    <div class="col-12 col-md-3">
-                        <img src="Imagens/PC1.png" alt="Computador 1" class="img-responsive">
+                    <div class="col-12 col-xs-2 col-sm-3 col-md-3 col-lg-3">
+                        <img src="Imagens/PC1.png" class="img-responsive" alt="Responsive image">
                             <P>Lorem ipsum dolor sit amet</P>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <img src="Imagens/PC2.png" alt="Computador 2" class="img-responsive">
+                    <div class="col-12 col-xs-2 col-sm-3 col-md-3 col-lg-3">
+                        <img src="Imagens/PC2.png" class="img-responsive" alt="Responsive image">
                         <P>Lorem ipsum dolor sit amet</P>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <img src="Imagens/PC3.png" alt="Computador 3" class="img-responsive">
+                    <div class="col-12 col-xs-2 col-sm-3 col-md-3 col-lg-3">
+                        <img src="Imagens/PC3.png" class="img-responsive" alt="Responsive image">
                         <P>Lorem ipsum dolor sit amet</P>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <img src="Imagens/PC4.png" alt="Computador 4" class="img-responsive">
+                    <div class="col-12 col-xs-2 col-sm-3 col-md-3 col-lg-3">
+                        <img src="Imagens/PC4.png" class="img-responsive" alt="Responsive image">
                         <P>Lorem ipsum dolor sit amet</P>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
         <section id="infos">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-2">
+                    <div class="col-12 col-xs-1 col-sm-2 col-md-2 col-lg-2">
                         <h4>Páginas</h4>
                         <div>
                             <a href="index.html" class="logo"><img src="Imagens/Instagram.png" alt="Instagram"></a>
@@ -96,7 +97,7 @@
                             <a href="index.html" class="logo"><img src="Imagens/Linkedin.png" alt="Linkedin"></a>
                         </div>
                     </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-xs-1 col-sm-2 col-md-3 col-lg-3"">
                             <h4>Endereço</h4>
                             <div>
                                 <h6>
@@ -104,20 +105,51 @@
                                 </h6>
                             </div>
                         </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-xs-1 col-sm-2 col-md-4 col-lg-4"">
                         <h4>GameMania</h4>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-xs-1 col-sm-2 col-md-3 col-lg-2"">
                         <nav class="cadastro">
-                            <input type="email">
-                            <div class="btncadastro">
-                                <button type="button" class="btn btn-primary">CADASTRAR</button>
-                            </div>
+                            <form action="">
+                                <input id="campoemail" type="email" placeholder="E-mail" required>
+                                <button class="btncadastro"  onclick="enviarEmail()">CADASTRAR</button>
+                            </form>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--NOTICIAS
+        <section>
+        
+        
+        
+        
+        
+        
+        
+        
+        </section
+        -->
+        
+        <script src="JS/script.js"></script>
+
+        <script>
+            let menu = document.getElementById("menu");
+
+            function mostrarMenu(){
+                console.log(getComputedStyle(menu).display);
+
+                if (menu.style.display != "none") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "flex";
+                }
+
+            }
+
+        </script>
 
     </body>
 </html>

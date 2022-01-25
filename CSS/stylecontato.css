@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+header {
+    font-family: Quantico;
+    width: 1366px;
+    height: 140px;
+    background-color: #2D2A2A;
+}
+
+@font-face {
+    font-family: Quantico;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+.container-grid {
+    width: 1366px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.posi-header {
+    width: 1366px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 70%;
+    align-items: center;
+    word-spacing: 30px;
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 35px;
+    
+}
+
+.barras{
+    
+}
+
+.botaobusca {
+   display: inline-flex;
+   justify-content: center;
+   right: 15%;
+}
+
+
+.form-contato {
+    width: 1366px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    padding-top: 30px;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+
+.container-box {
+    width: 400px;
+    height: 530px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+#infos {
+    background-color:black;
+    width: 1366px;
+    height: 100px;
+ }
+ 
+ #infos h4{
+     color: white;
+     text-shadow: #1d91c770;
+ }
+ #infos h6{
+     color: white;
+     text-shadow: #1d91c770;
+ }
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#campoemail {
+    width: 270px;
+}
+
+.btncadastro {
+    display: flex;
+    justify-content: center;
+    background-color: #0d6efd;
+    border: 1px;
+    border-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    text-indent: 0px;
+    text-shadow: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s;
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 270px;
+    height: 35px;
+}
+
+.btncadastro:hover {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+}
