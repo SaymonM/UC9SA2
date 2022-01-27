@@ -266,11 +266,11 @@ header {
 @media screen and (max-width: 990px){
     
     header{
-        width: 1110px;
+        width: 999px;
     }
 
     .banner {
-        width: 1110px;
+        width: 999px;
         height: 200px;
     }
     .banner h1{
@@ -284,7 +284,7 @@ header {
     }
 
     .computadores {
-        width: 1110px;
+        width: 999px;
     }
 
     .menu {
@@ -314,11 +314,18 @@ header {
     }
 
     #infos {
-        width: 1110px;
+        width: 999px;
     }
 
     #infos img {
         width: 35px;
+    }
+    #campoemail {
+        width: 170px;
+    }
+    
+    .btncadastro {
+        width: 170px;
     }
 }
 
@@ -330,9 +337,23 @@ header {
     .banner{
         width: 790px;
     }
+    
+    .banner h1{
+        font-size: 25px;
+    }
+    .banner h4{
+        font-size: 15px;
+    }
+    .banner a{
+        width: 100px;
+    }
 
     .computadores{
         width: 790px;
+    }
+
+    .computadores h1{
+        font-size: 25px;
     }
 
     .computadores img {
@@ -342,8 +363,47 @@ header {
     #infos{
         width: 790px;
     }
+    #infos img {
+        width: 25px;
+    }
+    #campoemail {
+        width: 150px;
+    }
     
-
+    .btncadastro {
+        width: 150px;
+    }
+    
+    @media screen and (max-width: 540px){
+        header{
+            width: 540px;
+        }
+    
+        .banner{
+            width: 540px;
+        }
+    
+        .computadores{
+            width: 540px;
+        }
+    
+        .computadores img {
+            width: 100px;
+        }
+    
+        #infos{
+            width: 540px;
+        }
+        #infos img {
+            width: 15px;
+        }
+        #campoemail {
+            width: 130px;
+        }
+        
+        .btncadastro {
+            width: 130px;
+        }
    
 }
 
